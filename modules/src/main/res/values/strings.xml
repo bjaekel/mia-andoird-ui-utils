@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="retry">Retry</string>
+    <string name="error_default">An error has occurred</string>
+    <string name="format_duration_min_sec">%1$s | %2$dmin %3$ds</string>
+    <string name="format_duration_min">%1$s | %2$dmin</string>
+    <string name="format_duration_sec">%1$s | %2$ds</string>
+    <string name="date_format">MM.dd.yyyy</string>
+
+</resources>

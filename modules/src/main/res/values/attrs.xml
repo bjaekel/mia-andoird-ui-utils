@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PagingModule">
+        <attr name="gridVerticalMargin" format="dimension"/>
+        <attr name="gridHorizontalMargin" format="dimension"/>
+        <attr name="useVerticalMarginOnEdges" format="boolean"/>
+        <attr name="useHorizontalMarginOnEdges" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="ToolbarModule">
+        <attr name="highlightColor" format="reference|color"/>
+    </declare-styleable>
+
+    <declare-styleable name="VariablySizedTabLayout">
+        <attr name="varTabTextAppearance" format="reference"/>
+        <attr name="varTabSelectedTextColor" format="color"/>
+        <attr name="varTabTextColor" format="color"/>
+        <attr name="varTabTextAllCaps" format="boolean"/>
+        <attr name="varTabFixedSize" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="IrregularGridModule">
+        <attr name="grid_title" format="string"/>
+        <attr name="extra_button_text" format="string"/>
+        <attr name="use_placeholder" format="boolean"/>
+    </declare-styleable>
+</resources>

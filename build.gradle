@@ -1,0 +1,37 @@
+import org.ajoberstar.grgit.Grgit
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.5.0'
+        classpath 'org.ajoberstar:grgit:1.4.1'
+    }
+}
+
+ext {
+    // Git
+    repository = Grgit.open(file('.'))
+
+    // App versioning
+    versionName = repository.describe()                    // Version name of app based on latest tag, Example: 1.0-14-12345
+    versionCode = repository.log(includes:['HEAD']).size() // Version code of app based on number of commits.
+
+    // Build configuration for all modules
+    compileSdkVersion = 23
+    buildToolsVersion = "23.0.2"
+    minSdkVersion     = 16
+    targetSdkVersion  = 23
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
